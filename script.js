@@ -1,5 +1,20 @@
 "use strict";
 
+///////PrimaryHeading/////////////
+
+const text = "Hey, I'm Faruk Hundekari"; // sentence to animate
+const element = document.querySelector(".PrimaryHeading");
+
+let index = 0;
+function typeEffect() {
+  if (index < text.length) {
+    element.textContent = element.textContent + text.charAt(index);
+    index++;
+    setTimeout(effect, 100);
+  }
+}
+window.onload = effect;
+
 ////////////////////Form Data Handler ////////////////////////
 const formData = document.getElementById("contact-form");
 
