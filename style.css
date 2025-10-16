@@ -1144,3 +1144,12 @@ body {
     font-size: 1.5rem;
   }
 }
+.PrimaryHeading::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
